@@ -13,7 +13,7 @@ const graphqlResolver = require('./graphql/resolver/carRes')
 
 
 var corsOptions = {
-    origin: "http://localhost:3000"
+    origin: "*"
   };
 app.use(cors(corsOptions));
 mongoose.connect(process.env.DB_ACCESS, () => {
